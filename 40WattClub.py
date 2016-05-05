@@ -1,3 +1,6 @@
+#I would suggest uncommenting the profile lines and adding a firefox profile that doesn't load images
+#to save bandwidth
+
 from selenium import webdriver
 #from selenium.webdriver.firefox.webdriver import FirefoxProfile
 
