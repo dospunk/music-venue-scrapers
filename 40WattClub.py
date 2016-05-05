@@ -7,7 +7,7 @@ from selenium import webdriver
 driver = webdriver.Firefox()
 driver.get("http://www.40Watt.com")
 
-debugging = false
+debugging = False
 
 bands = driver.find_elements_by_xpath("//h1[@class='headliners summary']/a[1]")
 days = driver.find_elements_by_xpath("//h2[@class='dates']")
