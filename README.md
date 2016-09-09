@@ -5,6 +5,8 @@ Currently all scrapers use [selenium](https://pypi.python.org/pypi/selenium).
 ## Scrapers
 - [40 Watt Club](https://github.com/dospunk/music-venue-scrapers/blob/master/40WattClub.py)
   - [website](http://www.40watt.com/)
+- [Caledonia Lounge](https://github.com/dospunk/music-venue-scrapers/blob/master/CaledoniaLounge.py)
+  - [website](http://www.caledonialounge.com)
 
 ## Requests
-If you would like a scraper made, open an issue with `[Request]` as the subject.
+If you would like a scraper made, open an issue with `[Request]` in the subject.
