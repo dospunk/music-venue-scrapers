@@ -1,5 +1,6 @@
 from selenium import webdriver
 import sys
+import time
 def run():
 	driver = webdriver.Firefox()
 	driver.get("http://caledonialounge.com")
@@ -21,7 +22,7 @@ def run():
 			for j in range(0, len(bands)):
 				if bands[j].text == "":
 					pass
-				elif "event page here." not in bands[j].text.lower() and "purchase here." not in bands[j].text.lower() and " in advance." not in bands[j].text.lower():
+				elif "event page here." not in bands[j].text.lower() and "purchase here." not in bands[j].text.lower() and "purchase tickets here." not in bands[j].text.lower() and " in advance." not in bands[j].text.lower():
 					print("  " + bands[j].text)
 			doors = prices_and_doors[i].split("\n")[0]
 			prices = prices_and_doors[i].split("\n")[1]
