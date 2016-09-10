@@ -2,7 +2,6 @@
 #to save bandwidth
 
 from selenium import webdriver
-import re
 import time
 #from selenium.webdriver.firefox.webdriver import FirefoxProfile
 
