@@ -1,5 +1,3 @@
-#NOT WORKING SORRY
-
 from selenium import webdriver
 import sys, time, traceback
 def run():
@@ -8,8 +6,6 @@ def run():
 	
 	try:
 		dates = driver.find_elements_by_tag_name('dt')
-		for d in dates:
-			print(d.text)
 		bands_parent = driver.find_elements_by_xpath('//ul')
 		prices_and_doors_parent = driver.find_elements_by_xpath('//p')
 		prices_and_doors = []
@@ -17,8 +13,6 @@ def run():
 		for k in prices_and_doors_parent:
 			if "presents" not in k.text.lower() and "shows_Header" not in k.get_attribute("class"):
 				prices_and_doors.append(k.text)
-		
-		print(prices_and_doors)
 		
 		for i in reversed(range(0, len(dates))):
 			print("Date: " + dates[i].text)
