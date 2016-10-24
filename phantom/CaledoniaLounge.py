@@ -15,7 +15,7 @@ def run():
 		prices_and_doors = []
 	
 		for k in prices_and_doors_parent:
-			if "presents" not in k.text.lower() && "shows_Header" not in k.get_attribute("class"):
+			if "presents" not in k.text.lower() and "shows_Header" not in k.get_attribute("class"):
 				prices_and_doors.append(k.text)
 		
 		print(prices_and_doors)
