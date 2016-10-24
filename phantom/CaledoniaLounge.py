@@ -1,8 +1,7 @@
 #NOT WORKING SORRY
 
 from selenium import webdriver
-import sys
-import time
+import sys, time, traceback
 def run():
 	driver = webdriver.PhantomJS()
 	driver.get("http://caledonialounge.com")
@@ -39,6 +38,7 @@ def run():
 		print("----------Caledonia Lounge----------")
 	except:
 		print(str(sys.exc_info()))
+		traceback.print_tb(sys.exc_info()[2])
 		driver.quit()
 
 while True:
