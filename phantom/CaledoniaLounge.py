@@ -14,7 +14,8 @@ def run():
 		for k in prices_and_doors_parent:
 			if "presents" not in k.text.lower():
 				prices_and_doors.append(k.text)
-				print(k.text)
+		
+		print(prices_and_doors)
 		
 		for i in reversed(range(0, len(dates))):
 			print("Date: " + dates[i].text)
