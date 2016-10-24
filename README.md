@@ -1,6 +1,7 @@
 # Read Me
 A collection of scrapers written in python for music venue websites.
 Currently all scrapers use [selenium](https://pypi.python.org/pypi/selenium).
+
 Firefox scrapers are currently not working because Selenium and Firefox currently do not play well together.
 
 ## Scrapers
