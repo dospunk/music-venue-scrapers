@@ -46,4 +46,3 @@ except:
 	while True:
 		run()
 		time.sleep(43200)
-
