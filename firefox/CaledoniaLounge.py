@@ -1,6 +1,5 @@
 from selenium import webdriver
-import sys
-import time
+import sys, time, traceback
 def run():
 	driver = webdriver.Firefox()
 	driver.get("http://caledonialounge.com")
@@ -12,7 +11,7 @@ def run():
 		prices_and_doors = []
 	
 		for k in prices_and_doors_parent:
-			if "presents" not in k.text.lower():
+			if "presents" not in k.text.lower() and "shows_Header" not in k.get_attribute("class"):
 				prices_and_doors.append(k.text)
 		
 		for i in reversed(range(0, len(dates))):
@@ -32,9 +31,13 @@ def run():
 		driver.quit()
 		print("----------Caledonia Lounge----------")
 	except:
-		print(sys.exec_info()[0])
+		print(str(sys.exc_info()))
+		traceback.print_tb(sys.exc_info()[2])
 		driver.quit()
 
-while True:
+if sys.argv[1] == '-o':
 	run()
-	time.sleep(43200)
+else:
+	while True:
+		run()
+		time.sleep(43200)
