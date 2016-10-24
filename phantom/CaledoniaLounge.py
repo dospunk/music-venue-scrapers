@@ -30,7 +30,7 @@ def run():
 				elif "event page here." not in bands[j].text.lower() and "purchase here." not in bands[j].text.lower() and "purchase tickets here." not in bands[j].text.lower() and " in advance." not in bands[j].text.lower():
 					print("  " + bands[j].text)
 			doors = prices_and_doors[i].split("\n")[0]
-			prices = prices_and_doors[i].split("\n")[0]
+			prices = prices_and_doors[i].split("\n")[1]
 			print("Doors: " + doors[9:])
 			print("Price: " + prices)
 			print("------------------------------------")
