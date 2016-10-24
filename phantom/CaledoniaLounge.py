@@ -7,7 +7,8 @@ def run():
 	
 	try:
 		dates = driver.find_elements_by_tag_name('dt')
-		print(dates)
+		for d in dates:
+			print(d.text)
 		bands_parent = driver.find_elements_by_xpath('//ul')
 		prices_and_doors_parent = driver.find_elements_by_xpath('//p')
 		prices_and_doors = []
