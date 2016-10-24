@@ -35,8 +35,8 @@ def run():
 			print("------------------------------------")
 		driver.quit()
 		print("----------Caledonia Lounge----------")
-	except Exception as e:
-		print(e)
+	except:
+		print(sys.exc_info()[0])
 		driver.quit()
 
 while True:
