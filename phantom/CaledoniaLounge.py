@@ -35,7 +35,6 @@ def run():
 		traceback.print_tb(sys.exc_info()[2])
 		driver.quit()
 
-print("Args" + str(sys.argv))
 if sys.argv[1] == '-o':
 	run()
 else:
