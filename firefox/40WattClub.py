@@ -1,5 +1,5 @@
 from selenium import webdriver
-import time
+import time, sys, traceback
 
 def run():
 	driver = webdriver.Firefox()
@@ -10,9 +10,7 @@ def run():
 		doors = driver.find_elements_by_xpath("//span[@class='doors']")
 		raw_prices = driver.find_elements_by_class_name("ticket-price")
 		prices = [];
-	
 		u = 0
-	
 		for p in raw_prices:
 			prices.append(p.text.translate({ord(c): None for c in 'Tickets'}).replace("\n", ""))
 			u = u+1
