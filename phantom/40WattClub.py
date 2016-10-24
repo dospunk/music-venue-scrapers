@@ -45,9 +45,14 @@ def run():
 		traceback.print_tb(sys.exc_info()[2])
 		driver.quit()
 
-if sys.argv[1] == '-o':
-	run()
-else:
+try:
+	if sys.argv[1] == '-o':
+		run()
+	else:
+		while True:
+			run()
+			time.sleep(43200)
+except:
 	while True:
 		run()
 		time.sleep(43200)
