@@ -1,6 +1,6 @@
 # Read Me
 A collection of scrapers written in python for music venue websites.
-Currently all scrapers use [selenium](https://pypi.python.org/pypi/selenium).
+Currently the 40 Watt Club scraper uses [selenium](https://pypi.python.org/pypi/selenium), but this is hopefully soon to change
 
 Firefox scrapers are currently not working because Selenium and Firefox currently do not play well together.
 
