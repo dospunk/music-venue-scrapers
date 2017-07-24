@@ -7,7 +7,7 @@ Firefox scrapers are currently not working because Selenium and Firefox currentl
 ## Scrapers
 - [40 Watt Club](https://github.com/dospunk/music-venue-scrapers/blob/master/40WattClub.py)
   - [website](http://www.40watt.com/)
-- [Caledonia Lounge](https://github.com/dospunk/music-venue-scrapers/blob/master/CaledoniaLounge.py)
+- [Caledonia Lounge](https://github.com/dospunk/music-venue-scrapers/blob/master/caledonia.py)
   - [website](http://www.caledonialounge.com)
 
 ## Requests
