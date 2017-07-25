@@ -17,7 +17,7 @@ class MasqParser(HTMLParser):
 			self.out += 1
 		elif ("id", "featured-carousel slide slick-initialized slick-slider") in attrs:
 			self.out = 100000
-		elif ("class", "col col-md-3-4 upcomingShows js-eventList archive") in attrs:
+		elif ("class", "archiveList--homepage list display-shortList") in attrs:
 			self.out = 0
 		else:
 			for attr in attrs:
