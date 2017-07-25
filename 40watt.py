@@ -5,7 +5,7 @@ class FortyWattParser(HTMLParser):
 	def __init__(self):
 		HTMLParser.__init__(self)
 		self.out = 0
-		self.filter = ["", "40 Watt", "706.549.7871", "More Info", "Tickets"]
+		self.filter = ["", "40 Watt", "706.549.7871", "More Info", "Tickets", "285 W. Washington Street Athens, GA", "Calendar", "Venue", "Photo Gallery", "FAQs", "Contact", "Upcoming Shows", "View Calendar"]
 		self.tag_filter = ["script", "title", "style", "meta"]
 		self.attr_filter = [("class", "sidebar floatright")]
 	
