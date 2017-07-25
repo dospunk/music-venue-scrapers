@@ -10,6 +10,7 @@ class MasqParser(HTMLParser):
 		self.attr_filter = [("class", "col col-md-1-4 sidebar")]
 		self.days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 		self.locations = ["Hell", "Purgatory", "Heaven", "Other Location"]
+		self.events = 0
 	
 	def handle_starttag(self, tag, attrs):
 		if tag in self.tag_filter:
@@ -30,7 +31,7 @@ class MasqParser(HTMLParser):
 
 	def handle_data(self, data):
 		data = data.strip()
-		if data not in self.filter and not self.out:
+		if data not in self.filter and not self.out and self.events <= 13:
 			try:
 				int(data)
 				print(data + " ", end="")
@@ -40,6 +41,7 @@ class MasqParser(HTMLParser):
 				elif "Doors " in data and "/" in data and ":" in data:
 					print(data)
 					print("------------------------")
+					self.events += 1
 				else:
 					print(data)
 
