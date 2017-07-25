@@ -1,11 +1,8 @@
-# Read Me
-A collection of scrapers written in python for music venue websites.
-Currently the 40 Watt Club scraper uses [selenium](https://pypi.python.org/pypi/selenium), but this is hopefully soon to change
-
-Firefox scrapers are currently not working because Selenium and Firefox currently do not play well together.
+# Music-Venue-Scrapers
+A collection of scrapers written in python for music venue websites. All scrapers use `requests`
 
 ## Scrapers
-- [40 Watt Club](https://github.com/dospunk/music-venue-scrapers/blob/master/40WattClub.py)
+- [40 Watt Club](https://github.com/dospunk/music-venue-scrapers/blob/master/40watt.py)
   - [website](http://www.40watt.com/)
 - [Caledonia Lounge](https://github.com/dospunk/music-venue-scrapers/blob/master/caledonia.py)
   - [website](http://www.caledonialounge.com)
